@@ -4,17 +4,12 @@
 	position: relative;
 	z-index: 100;
 }
-#wrap .logo {
-	margin-bottom: 20px;
-}
 #wrap .card {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
+	margin-top: 20px;
 }
 #wrap .card .card-title {
 	padding: 0 1.25rem;
 	margin-top: .75rem;
-}
-.card +  .card {
-	margin-top: 20px;
 }
