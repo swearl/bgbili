@@ -1,6 +1,6 @@
 # bgbili
 
-把B站视频做成网页背景视频
+把B站视频做成网页背景视频, [Demo](https://swearl.github.io/bgbili/)
 
 ## 用法
 
