@@ -8,6 +8,7 @@
 
 		const self = $(this);
 		self.addClass("bgbili-player").after("<div class='bgbili-mask'></div>");
+		checkMeta();
 
 		const url = `https://api.bilibili.com/playurl?aid=${settings.aid}&page=${settings.page}&platform=html5&vtype=mp4&type=jsonp`;
 		$.ajax({
@@ -43,6 +44,14 @@
 				"left": videoLeft,
 				"top": videoTop
 			})
+		}
+
+		function checkMeta() {
+			if($("meta[name='referrer']").length) {
+				$("meta[name='referrer']").attr("content", "no-referrer");
+			} else {
+				$("head").append("<meta name='referrer' content='no-referrer'>")
+			}
 		}
 	}
 })(jQuery);
