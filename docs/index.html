@@ -1,60 +1,84 @@
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>bgbili</title>
-<link rel="stylesheet" href="./css/bgbili.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./js/bgbili.js"></script>
-</head>
-<body>
-	<div id="bgbili"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>bgbili</title>
+    <link rel="stylesheet" href="./css/bgbili.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bgbili.js"></script>
+  </head>
+  <body>
+    <div id="bgbili"></div>
 
-	<div id="wrap" class="container">
-		<div class="logo">
-			<img src="./images/bgbili.png" alt="bgbili">
-		</div>
-		<div class="row">
-			<div class="col col-md-8">
-				<div class="card">
-					<div class="card-title"><h1>bgbili</h1></div>
-					<div class="card-body">bgbili是一个jQuery插件, 能够把B站视频放到您的网页背景播放. 您只要在您的刚刚上放个容器, 设置一下参数, 您就可以见到效果<br><br>$(element).bgbili(options);</div>
-				</div>
-				<div class="card">
-					<div class="card-title"><h2>例子</h2></div>
-					<div class="card-body">比如B站视频 https://www.bilibili.com/video/av68311<br>aid为68311(av号的纯数字), 在页面上加一个id为bgbili的div, 然后js加以下代码, 您就可以看到该视频在您页面的背景播放了<br><br>$("#bgbili").bgbili({aid: 68311});</div>
-				</div>
-				<div class="card">
-					<div class="card-title"><h2>参数与默认值</h2></div>
-					<div class="card-body">
-						<ul>
-							<li>aid: B站视频ID(av号的纯数字部分), 默认值: 314</li>
-							<li>page: B站视频的分P, 默认值: 1</li>
-							<li>ratio: 视频比例, 默认值: 16 / 9</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-4">
-				<div class="card">
-					<div class="card-title"><h2>下载</h2></div>
-					<div class="card-body">您可以在<a href="https://github.com/swearl/bgbili/">Github</a>下载到源码.</div>
-				</div>
-				<div class="card">
-					<div class="card-title"><h2>许可</h2></div>
-					<div class="card-body"><a href="https://opensource.org/licenses/mit-license.php">The MIT License</a></div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div id="wrap" class="container">
+      <div class="logo">
+        <img src="./images/bgbili.png" alt="bgbili" />
+      </div>
+      <div class="row">
+        <div class="col col-md-8">
+          <div class="card">
+            <div class="card-title"><h1>bgbili</h1></div>
+            <div class="card-body">
+              bgbili是一个jQuery插件, 能够把B站视频放到您的网页背景播放.
+              您只要在您的刚刚上放个容器, 设置一下参数, 您就可以见到效果<br /><br />$(element).bgbili(options);
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title"><h2>例子</h2></div>
+            <div class="card-body">
+              比如B站视频 https://www.bilibili.com/video/BV11x411c711<br />bvid为BV11x411c711,
+              在页面上加一个id为bgbili的div, 然后js加以下代码,
+              您就可以看到该视频在您页面的背景播放了<br /><br />$("#bgbili").bgbili({bvid:
+              'BV11x411c711'});
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title"><h2>参数与默认值</h2></div>
+            <div class="card-body">
+              <ul>
+                <li>bvid: B站视频ID(av号的纯数字部分), 默认值: 314</li>
+                <li>p: B站视频的分P, 默认值: 1</li>
+                <li>ratio: 视频比例, 默认值: 16 / 9</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4">
+          <div class="card">
+            <div class="card-title"><h2>下载</h2></div>
+            <div class="card-body">
+              您可以在<a href="https://github.com/swearl/bgbili/">Github</a
+              >下载到源码.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title"><h2>许可</h2></div>
+            <div class="card-body">
+              <a href="https://opensource.org/licenses/mit-license.php"
+                >The MIT License</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script>
-$(function() {
-	$("#bgbili").bgbili({aid: 68311});
-});
-</script>
-</body>
+    <script>
+      $(function () {
+        $("#bgbili").bgbili({ bvid: "BV11x411c711" });
+      });
+    </script>
+  </body>
 </html>
