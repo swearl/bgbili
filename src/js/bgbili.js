@@ -18,7 +18,7 @@
         const video = `<video src='${res.durl[0].url.replace(
           "http://",
           "https://"
-        )}' autoplay loop muted></video>`;
+        )}' preload autoplay muted loop playsinline></video>`;
         self.append(video);
         alignVideo();
       });
